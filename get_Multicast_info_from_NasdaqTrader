@@ -15,7 +15,7 @@ url = 'http://www.nasdaqtrader.com/Trader.aspx?id=FeedMIPs'
 def make_soup(url):
     page = urllib.request.urlopen(url)
     soupdata = BeautifulSoup(page, "html.parser")
-    print(soupdata)
+    #print(soupdata)  <---  this will print in HTML format
     return soupdata
 
 soup = make_soup(url)
